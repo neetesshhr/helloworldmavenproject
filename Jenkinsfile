@@ -12,7 +12,9 @@ pipeline{
         }
 
          stage('Execute Maven'){
+            steps{
             sh 'mvn package'
+         }
          }
     }
 }
