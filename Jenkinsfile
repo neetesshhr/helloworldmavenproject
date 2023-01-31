@@ -1,9 +1,9 @@
 pipeline{
     agent any
-    tools
-    {
-        maven "maven"
-    }
+    // tools
+    // {
+    //     maven "maven"
+    // }
     stages{
         stage('checkout'){
           steps{  
@@ -11,10 +11,16 @@ pipeline{
            }
         }
 
-         stage('Execute Maven'){
+        //  stage('Execute Maven'){
+        //     steps{
+        //     sh 'mvn package'
+        //  }
+        //  }
+        stage('hello world'){
             steps{
-            sh 'mvn package'
-         }
-         }
+                echo "Hello world"
+            }
+        }
+
     }
 }
