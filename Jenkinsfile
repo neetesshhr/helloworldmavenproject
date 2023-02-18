@@ -18,7 +18,7 @@ pipeline{
         //  }
         stage('hello world'){
             steps{
-                echo "Hello world"
+                echo "Hello world word 3 time"
             }
         }
 
